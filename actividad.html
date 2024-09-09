@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CablePuerco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff8000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/png;base64,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" alt="Logo de la empresa" class="logo">
+        <h1>Bienvenido a Mi Página Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
